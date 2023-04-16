@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="modal fade" id="myBasicInfoModal">
+	<div class="modal-dialog">
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">我的信息</div>
+	  			<div class="panel-body"><p></p></div>
+	  				<form class="form-horizontal" method="post" onsubmit="modifyMyInfo()" action="" id="myBasicInfoForm">
+			  			 <div class="form-group">
+						   <label class="control-label col-xs-2">用户名:</label>
+						   <div class="col-xs-4">
+						   		<input type="text" class="form-control" name="username" disabled>
+						   </div>
+						 </div>
+						 <div class="form-group">
+						    <label class="control-label col-xs-2">邮箱：</label>
+						    <div class="col-xs-4">
+						    	<input type="text" class="form-control" name="email">
+						    </div>
+						 </div>
+					 	<div class="form-group">
+						    <label class="control-label col-xs-2">手机号：</label>
+						    <div class="col-xs-4">
+						    	<input type="text" class="form-control" name="phone">
+						    </div>
+						 </div>
+						 <div class="form-group hidden">
+						    	<input type="text" class="form-control" name="question">
+						    	<input type="text" class="form-control" name="answer">
+						 </div>
+						 <div class="form-group">
+						 	<div class="col-xs-12 text-right">
+						 		<button type="submit" class="btn btn-default btn-sm">应用</button>
+						 		<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+						 	</div>
+						 </div>
+			  		</form>
+	  				
+	  		</div>
+	 </div>
+</div>
+</body>
+</html>

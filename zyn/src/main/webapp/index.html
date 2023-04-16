@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="bsqd/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="bsqd/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<link href="bsqd/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="bsqd/css/jquery.countdown.css" /> 
+<link href="bsqd/css/font-awesome.css" rel="stylesheet"> 
+<!-- <link href="bsqd/css/datatables.min.css" rel="stylesheet">  -->
+<!-- <link href="bsqd/css/jquery.dataTables.min.css" rel="stylesheet">  -->
+<link href="bsqd/css/dataTables.bootstrap.min.css" rel="stylesheet"> 
+<link href="bsqd/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script src="bsqd/js/jquery.min.js"></script>
+<script src="bsqd/js/bootstrap-3.1.1.min.js"></script>
+<script src="bsqd/js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="bsqd/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script type="text/javascript" src="bsqd/js/jquery.flexisel.js"></script>
+	<script src="bsqd/js/jquery.dataTables.min.js"></script>
+<!-- <script src="bsqd/js/datatables.min.js"></script> -->
+<script src="bsqd/js/dataTables.bootstrap.min.js"></script>
+	<script src="bsqd/js/index.js"></script>
+    <script src="bsqd/js/upload.js"></script>
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling --> 
+</head> 
+<body>
+<div id="upload"></div>
+<div id="myBasicInfo"></div>
+<div id="myAddress"></div>
+<div id="myOrder"></div>
+<div id="myStuff"></div>
+	<!-- login -->
+	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;</button>
+					<h4 class="modal-title" id="myModalLabel">闲置交易期待您的到来！</h4>
+				</div>
+				<div class="modal-body modal-body-sub">
+					<div class="row">
+						<div class="col-md-8 modal_body_left modal_body_left1" style="border-right: 1px dotted #C2C2C2;padding-right:3em;">
+							<div class="sap_tabs">	
+								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+									<ul>
+										<li class="resp-tab-item" aria-controls="tab_item-0"><span>登陆</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1"><span>注册</span></li>
+									</ul>		
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+										<div class="facts">
+											<div class="register">
+												 <form action="" method="post" onsubmit="signIn()" id="loginForm">	
+													
+														<input name="username" id="username" placeholder="用户名" type="text" required  autocomplete="on">						
+														<input name="password" id="password" placeholder="密码" type="password" required autocomplete="on">										
+														<div class="sign-up">
+															<input type="submit" value="登陆"/>
+														</div>
+												</form>
+											</div>
+										</div> 
+									</div>	 
+									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+										<div class="facts">
+											<div class="register">
+												<form action="" onsubmit="userRegister()"  method="post" id="registerForm">			
+														<input placeholder="名称" name="username" type="text" required autocomplete="off">
+														<input placeholder="邮箱" name="email" type="email" required autocomplete="off">
+														<input placeholder="手机号" name="phone" type="text" maxlength="11" required autocomplete="off">		
+														<input id="pwd1" placeholder="密码" name="password" type="password" required autocomplete="off">	
+														<input id="pwd2" onblur="checkRepwd()" placeholder="确认密码" name="Password" type="password" required autocomplete="off"><span id="tishi"></span>
+														<div class="sign-up">
+															<input type="submit" value="注册"/>
+														</div>
+												</form>
+											</div>
+										</div>
+									</div> 			        					            	      
+								</div>	
+							</div>
+							<!-- <script src="js/easyResponsiveTabs.js" type="text/javascript"></script> -->
+							<script type="text/javascript">
+								$(document).ready(function () {
+									$('#horizontalTab').easyResponsiveTabs({
+										type: 'default', //Types: default, vertical, accordion           
+										width: 'auto', //auto or any width like 600px
+										fit: true   // 100% fit in a container
+									});
+								});
+							</script>
+							<!-- <div id="OR" class="hidden-xs">OR</div> -->
+						</div>
+						<div class="col-md-4 modal_body_right modal_body_right1">
+							<div class="row text-center sign-with">
+								<div class="col-md-12">
+									<h3 class="other-nw">闲置交易我们更专业！</h3>
+								</div>
+								<div class="col-md-12">
+									<ul class="social">
+										<li class="social_facebook">闲</li>
+										<li class="social_dribbble">置</li>
+										<li class="social_twitter">交</li>
+										<li class="social_behance">易</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- header -->
+	<div class="header" id="home1">
+		<div class="container">
+			<div id="login" class="w3l_login loginBefore">
+				<a href="" id="loginModal" data-toggle="modal" data-target="#myModal88" onclick="showLoginModal()"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+				<span class="afterLogin hidden"></span>
+			</div>
+			<div class="w3l_logo">
+				<h1>网上闲置交易<span></span></h1>
+			</div>
+			<!-- <div class="search">
+				<input class="search_box" type="checkbox" id="search_box">
+				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+				<div class="search_form">
+					<form action="#" method="post">
+						<input type="text" name="Search" placeholder="搜索...">
+						<input type="submit" value="确定">
+					</form>
+				</div>
+			</div> -->
+			<div class="cart cart box_1"> 
+					<button class="w3view-cart cartShow hidden"  onclick="myCart()" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+			</div>  
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- navigation -->
+	<div class="navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div> 
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="act">主页</a></li>	
+						<!-- Mega Menu -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">产品 <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>服装</h6>
+											<li><a href="products.html?id=100005">男装</a></li> 
+											<li><a href="products.html?id=100006">女装</a></li> 
+											<li><a href="products.html?id=100007">童装</a></li> 
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>家居</h6>
+											<li><a href="products.html?id=100008">家具</a></li>
+											<li><a href="products.html?id=100009">电器</a></li>
+											<li><a href="products.html?id=100010">厨房</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-2">
+										<ul class="multi-column-dropdown">
+											<h6>数码</h6>
+											<li><a href="products.html?id=100011">相机</a></li>
+											<li><a href="products.html?id=100012">手机</a></li>
+											<li><a href="products.html?id=100013">电脑</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-2">
+										<ul class="multi-column-dropdown">
+											<h6>其它</h6>
+											<li><a href="products.html?id=100014">其它</a></li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+						</li>
+						<li class="hidden uploadShow"><a href="cartAndUpload.html">闲置发布</a></li>
+						<li class="managerShow hidden"><a href="manager.html">管理</a></li>
+						<li id="Welcome"></li>  
+						<li class="dropdown" style="float:right"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的 <span class="caret"></span></a>
+							<ul class="dropdown-menu hidden myInfoShow">
+								<li><a  href="myInfo.html" >个人中心</a></li>
+								<li><a onclick="loginOut()">退出</a></li>
+							</ul> 
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	
+	<!-- //navigation -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<h3>闲置交易 <span>特别优惠</span></h3>
+		</div>
+	</div>
+	<!-- //banner --> 
+	<!-- banner-bottom -->
+	
+	<!-- //banner-bottom --> 
+	<!-- modal-video -->
+	
+	<!-- //modal-video -->
+	<!-- new-products -->
+	<div class="new-products" id="new_products">
+		<div class="container">
+			<h3>闲置购买</h3>
+			<div class="agileinfo_new_products_grids" id="productsShow">
+			</div>
+		</div>
+	</div>
+	<!-- //new-products -->
+	<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="col-md-8 w3agile_newsletter_left">
+				<h3>闲置再利用</h3>
+				<p>在这里您可以较低的价格买到想要的产品，还可以在这里卖出您的闲置品，经济环保，共同实现绿色发展</p>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<script src="bsqd/js/minicart.js"></script>
+	<script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) { 
+        		}
+        	}
+        });
+    </script>  
+	<!-- //cart-js -->   
+</body>
+</html>
